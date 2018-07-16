@@ -8,6 +8,11 @@ import Header from "../Header/Header";
 
 const AppView = (props) => {
     return (
+        <div className="content-wrapper">
+            <Header setMovieDescription={props.setMovieDescription}/>
+            {Object.keys(props.movieDescription).length !== 0 &&
+            <MovieDescription movieDescription={props.movieDescription}/>}
+        </div>
     )
 };
 
