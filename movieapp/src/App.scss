@@ -1,0 +1,90 @@
+
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+body {
+	margin:0;
+	padding:0;
+}
+
+.header {
+	text-align:center;
+	margin:1% 0;
+
+	h1 {
+		margin:0 0 1% 0;
+	}
+
+	input {
+		border-radius: 10px;
+		border:1px solid #CCC;
+		padding:10px;
+		margin:0 10px 0 10px;
+		width:60%;
+	}
+}
+
+.movie-description {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+	.movie-poster,
+	.description-wrapper 
+	 {
+		-webkit-flex: 1 48%;
+		-moz-flex: 1 1 48%;
+		-ms-flex: 1 1 48%;
+		flex: 1 1 48%;
+		padding: 1%;
+		margin: 1%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.movie-poster
+	 {
+		text-align: center;
+	}
+}
+
+.autocomplete {
+	.autocomplete-item {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		-moz-flex-flow: row wrap;
+		flex-flow: row wrap;
+
+		.autocomplete-image,
+		.autocomplete-content
+		 {
+			-webkit-flex: 1 49%;
+			-moz-flex: 1 1 49%;
+			-ms-flex: 1 1 49%;
+			flex: 1 1 49%;
+			padding: 0.5%;
+			margin: 0.5%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
+			h2 {
+				margin:0;
+			}
+		}
+	}
+
+	.autocomplete-item:nth-child(odd) {
+		background:#e8e8e8;
+	}	
+}
+
+.footer {
+  	text-align:center;
+	margin:1% 0;
+}
